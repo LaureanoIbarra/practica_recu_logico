@@ -57,8 +57,6 @@ recorridosPosibles(Candidatos,[Gimnasio, OtroGimnasio |Gimnasios],TiempoLimite, 
     recorridosPosibles(RestoCandidatos, [OtroGimnasio|Gimnasios], Resto, SumaPokeparadasnueva),
     SumaPokeparadas is SumaPokeparadasnueva + Pokeparadas.
 
- 
-
 mejorTour(Etapas, LimiteDeTiempo):-
     etapasSinExcederTiempo(Etapas,LimiteDeTiempo,Pokeparadas),
     not((etapasSinExcederTiempo(OtrasEtapas,LimiteDeTiempo,OtrasPokeparadas), OtrasPokeparadas > Pokeparadas)).
